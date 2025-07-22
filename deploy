@@ -1,7 +1,10 @@
 #!/bin/bash
 
+echo "Step 1. Pull code from repository"
 git pull origin main
 
+echo "Step 2. Install node-modules"
 npm install
 
+echo "Step 3. Restart server"
 npx pm2 restart my-server
